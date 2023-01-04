@@ -1,0 +1,89 @@
+/*Responsive CSS*/
+
+.menu-toggle {display: none;}
+
+@media screen and (max-width:980px),screen and (max-device-width:980px){
+	.menu-toggle {display: block; position: absolute; top: 17px; right: 10px; width: 32px; height: 32px; overflow: hidden; text-indent: -9999px;
+		background: url(../images/bars.png) center center no-repeat;}
+    .main-menu {position: fixed; top: 0; right: -200px; z-index: 9998; width: 200px; height: 100vh; padding-top: 60px; background: #ecebeb;
+		-webkit-box-shadow: inset 5px 0px 10px 0px rgba(0,0,0,0.2);
+	    -moz-box-shadow: inset 5px 0px 10px 0px rgba(0,0,0,0.2);
+	    box-shadow: inset 5px 0px 10px 0px rgba(0,0,0,0.2);}	
+	.main-menu li {display: block; padding-right: 0;}
+	.main-menu li:after {content: ''; width: 100%; height: 1px; border-bottom: 1px solid #c1c1c1; position: absolute; top: 0; right: 0; -moz-transform: none; -webkit-transform: none; -o-transform: none; -ms-transform: none; transform: none;}
+	.main-menu li:first-child:after {border-bottom: none;}
+	.main-menu a {display: block; padding: 5px 0; text-align: center;}
+	.main-header {position: fixed; top: 0; z-index: 9999; height: 60px; padding: 0; 
+		-webkit-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.2);
+		-moz-box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.2);
+		box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.2);}
+	.main-header {height: 60px;}
+	.main-header a.logo{ display: block; height: 50px; position: absolute; top: 5px; left: 10px; }
+	.main-header a.logo img{ height: 100%; width: auto; }
+	.main-header:before, header:after{ display: none; }
+	.main-header .social {position: absolute; display: block; top: 19px; right: 60px; margin-top: 0px;}
+	.banner {width: 100%; padding: 0 10px; padding-top: 22%; background-size: 50% auto;}
+	.banner p {font-size: 0.9em; margin-bottom: 5px;}
+	.banner h1 {font-size: 2em; width: 55%; border-top-width: 2px; margin-top: 0px;}
+	.lastbutton .previous {left: 10px;}
+	.lastbutton .next {right: 10px;}
+	.bannergrey {padding-top: 60px; padding-bottom: 30px;}
+	.firsttext, .secondtext {padding: 10px 0;}
+	.continue {padding: 20px 0;}
+	.categoryinside {width: 100%; padding: 60px 10px 20px 10px;}
+	.questionnaire {width: 100%; padding: 50px 10px 0 10px;}
+	.bannerforus {width: 100%; padding: 60px 10px 0 10px;}
+	.portlofioimg {width: 100%; padding: 0 10px; margin-top: 100px;}
+	.branding {width: 100%; padding: 0 10px;}
+	.main-footer {width: 100%; padding: 0 10px;}
+}
+
+ @media screen and (max-width:860px),screen and (max-device-width:860px){
+	.banner {background-size: 40%;}
+	.banner h1 {width: 88%; font-size: 1.5em;}
+	.banner p {width: 80%;}
+	.bannerforus {background-size: 60% auto;}
+	.bannerforus h1 {border-top-width: 2px; width: 40%;}	
+	.bannerforus p {width: 40%;}
+	.main-footer .lastsection {background-image: none; padding: 10px 0;}
+	.main-footer .columnaddress {margin-left: 0px;}
+	.main-footer .columnaddress p {margin: 0;}
+}
+		
+ @media screen and (max-width:768px),screen and (max-device-width:768px){
+	.banner {background: none; padding-top: 60px;}
+	.banner h1 {width: 100%;}
+	.banner p {width: 100%;}
+	.branding h2 {font-size: 1.5em;}
+	.questionnaire .field {width: 100%; padding: 0;}
+	.catalogue {padding-bottom: 30px;}
+	.main-footer {border-top: none;}
+}
+		
+ @media screen and (max-width:640px),screen and (max-device-width:640px){
+	.catalogue .columnthree, .catalogue .columnthreetwo {width: 50%;}
+	.catalogue .columnthree:nth-child(3n+1), .catalogue .columnthreetwo:nth-child(3n+1) {clear: none;}
+	.catalogue .columnthree:nth-child(2n+1), .catalogue .columnthreetwo:nth-child(2n+1) {clear: both;}
+	.branding .firstimage, .branding .secondimage {width: 100%; margin-top: 5px;}
+	.columnone:before, .columntwo:before, .columnthr:before {height: 100px; background-size: auto 60px;}
+	.columnone:after, .columntwo:after, .columnthr:after {display: none;}
+	.detaillist .serviceone {width: 100%;}
+	.detaillist .serviceone ul {padding-top: 10px;}
+	.bannerforus {background: none;}
+	.bannerforus h1, .bannerforus p {width: 100%;}
+}
+ 
+ @media screen and (max-width:400px),screen and (max-device-width:400px){
+	.columnone, .columntwo, .columnthr {width: 100%; margin-bottom: 20px;}
+	.catalogue {padding-top: 20px;}
+	.catalogue .columnthree, .catalogue .columnthreetwo {width: 100%;}
+	.catalogue .columnthree:nth-child(2n+1), .catalogue .columnthreetwo:nth-child(2n+1) {clear: none;}
+	.catalogue .columnthree:nth-child(1n+1), .catalogue .columnthreetwo:nth-child(1n+1) {clear: both;}
+	.categoryinside {padding: 70px 10px 10px 10px;}
+	.categoryinside a {text-align: left; padding: 10px 0 10px 30%; margin-bottom: 5px;}
+	.categoryinside a:before {position: absolute; top: 50%; margin-top: -20px; left: 0; height: 40px; width: 30%; background-size: auto 30px;}
+	.social a {margin-left: 0; font-size: 18px; width: 26px;}
+	.lastbutton {height: 60px;}
+	.lastbutton a {width: 30px; height: 30px;}
+	.lastbutton .portfoliomenu {margin-left: -15px;}
+ }
